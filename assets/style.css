@@ -103,13 +103,13 @@ body {
         font-size: 0.75em;
     }
     .countdown {
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
-    }
-    .countdown > div > div {
-        font-size: 1.7em;
     }
     .countdown > div.countdown-seconds {
         display: none;
+    }
+    .countdown > div > div {
+        font-size: 1.7em;
     }
 }
