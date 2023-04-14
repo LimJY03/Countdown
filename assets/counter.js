@@ -1,6 +1,6 @@
-// Set target date
-const targetDate = new Date('23 June 2023').getTime();
-const startDate = new Date('23 Feb 2023').getTime();
+// Set start and target date
+const TARGETDATE = new Date('23 June 2023').getTime();
+const STARTDATE = new Date('23 Feb 2023').getTime();
 
 // Update countdown every second
 var countdown = setInterval(() => {
@@ -9,10 +9,10 @@ var countdown = setInterval(() => {
     var now = new Date().getTime();
 
     // Get time difference
-    var difference = targetDate - now;
+    var difference = TARGETDATE - now;
 
     // Get progress percentage
-    var progress = (now - startDate) / (targetDate - startDate) * 100;
+    var progress = (now - STARTDATE) / (TARGETDATE - STARTDATE) * 100;
 
     // Time calculations
     var days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -36,4 +36,4 @@ var countdown = setInterval(() => {
         document.getElementById('countdown').innerHTML = 'Countdown Finished!';
     }
 
-}, 1000);
+}, 1_000);
