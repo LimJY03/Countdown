@@ -1,5 +1,5 @@
 let i = 0;
-const minute = .25;
+const minute = 10;
 
 const imageUrls = [
     './images/cover-image-2.jpg',
