@@ -1,11 +1,11 @@
 let i = 0;
-const minute = .5;
+const minute = .25;
 
 const imageUrls = [
     './images/cover-image-2.jpg',
     './images/cover-image-3.jpg',
-    '../images/cover-image-4.jpg',,
-    '../images/cover-image-5.jpg',
+    './images/cover-image-4.jpg',
+    './images/cover-image-5.jpg',
     './images/cover-image-1.jpg',
 ];
 const backgroundStyleArr = [
