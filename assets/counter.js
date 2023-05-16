@@ -1,5 +1,5 @@
 // Set start and target date
-const TARGETDATE = new Date('23 June 2023').getTime();
+const TARGETDATE = new Date('21 June 2023').getTime();
 const STARTDATE = new Date('23 Feb 2023').getTime();
 
 // Update countdown every second
