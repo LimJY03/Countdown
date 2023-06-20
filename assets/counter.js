@@ -11,6 +11,8 @@ var countdown = setInterval(() => {
     // Get time difference
     var difference = TARGETDATE - now;
 
+    console.log(difference < 0)
+
     // Get progress percentage
     var progress = (now - STARTDATE) / (TARGETDATE - STARTDATE) * 100;
 
@@ -27,13 +29,14 @@ var countdown = setInterval(() => {
     document.getElementById('seconds').innerHTML = seconds < 10 ? `0${seconds}` : seconds;
     
     // Display progress bar
+    progress = Math.min(100, progress);
     document.documentElement.style.setProperty('--width-max', `${progress}%`);
     document.getElementById('progress-percentage').innerHTML = `${progress.toFixed(1)}%`;
 
     // Countdown finished
     if (difference < 0) {
+        document.getElementById('countdown').style.display = 'none';
         clearInterval(countdown);
-        document.getElementById('countdown').innerHTML = 'Countdown Finished!';
     }
 
 }, 1_000);
