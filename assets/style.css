@@ -59,6 +59,16 @@ body {
     font-weight: 700;
 }
 
+.countdown-end {
+    width: 100%;
+    margin: 10vw;
+    display: grid;
+    font-size: 5em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+}
+
 .title {
     padding-bottom: 50px;
     font-size: 1em;
