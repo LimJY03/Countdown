@@ -131,7 +131,7 @@ body {
     .countdown > div.countdown-seconds {
         display: none;
     }
-    .countdown > div > div {
+    .countdown > div > div, .countdown-end {
         font-size: 1.7em;
     }
 }
